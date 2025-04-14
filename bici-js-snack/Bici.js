@@ -25,8 +25,22 @@ const racingBike = [
   },
 ];
 
-const LightestBike = racingBike[3].name;
-const LightestWeight = racingBike[3].weight;
+//* VERSIONE HARDCODE
+// const LightestBike = racingBike[3].name;
+// const LightestWeight = racingBike[3].weight;
+// console.log(
+//   `La Bici più leggera sarà la ${LightestBike} con un peso di ${LightestWeight} kg`
+// );
+
+// * VERSIONE DYNAMIC
+let lightestBike;
+
+for (const currentBike of racingBike) {
+  if (!lightestBike || currentBike.weight < lightestBike.weight) {
+    lightestBike = currentBike;
+  }
+}
+
 console.log(
-  `La Bici più leggera sarà la ${LightestBike} con un peso di ${LightestWeight} kg`
+  `La bici più leggera è ${lightestBike.name} con un peso di ${lightestBike.weight} kg`
 );
