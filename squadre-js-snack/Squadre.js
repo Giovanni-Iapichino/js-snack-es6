@@ -48,10 +48,15 @@ const soccerTeams = [
   },
 ];
 
+// Creiamo una funzione che genera un numero random tra min e max.
+const generateRandomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
 // Generiamo numeri random al posto degli 0 nelle proprietà "punti" fatti e "falli subiti".
 for (let currentTeam of soccerTeams) {
-  currentTeam.points = Math.floor(Math.random() * 100) + 1;
-  currentTeam.fouls = Math.floor(Math.random() * 50) + 1;
+  currentTeam.points = generateRandomNumber(0, 100);
+  currentTeam.fouls = generateRandomNumber(0, 50);
 }
 console.table(soccerTeams);
 
