@@ -29,7 +29,7 @@ const racingBike = [
 // const LightestBike = racingBike[3].name;
 // const LightestWeight = racingBike[3].weight;
 // console.log(
-//   `La Bici più leggera sarà la ${LightestBike} con un peso di ${LightestWeight} kg`
+//   `La Bici più leggera è la ${LightestBike} con un peso di ${LightestWeight} kg`
 // );
 
 // * VERSIONE DYNAMIC
@@ -42,5 +42,5 @@ for (const currentBike of racingBike) {
 }
 
 console.log(
-  `La bici più leggera è ${lightestBike.name} con un peso di ${lightestBike.weight} kg`
+  `La bici più leggera è la ${lightestBike.name} con un peso di ${lightestBike.weight} kg`
 );
