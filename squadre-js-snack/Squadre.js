@@ -50,8 +50,8 @@ const soccerTeams = [
 
 // Generiamo numeri random al posto degli 0 nelle proprietà "punti" fatti e "falli subiti".
 for (let currentTeam of soccerTeams) {
-  currentTeam.points = Math.floor(Math.random() * 100);
-  currentTeam.fouls = Math.floor(Math.random() * 50);
+  currentTeam.points = Math.floor(Math.random() * 100) + 1;
+  currentTeam.fouls = Math.floor(Math.random() * 50) + 1;
 }
 console.table(soccerTeams);
 
