@@ -53,7 +53,7 @@ for (let currentTeam of soccerTeams) {
   currentTeam.points = Math.floor(Math.random() * 100);
   currentTeam.fouls = Math.floor(Math.random() * 50);
 }
-console.log(soccerTeams);
+console.table(soccerTeams);
 
 // Creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 const newSoccerTeams = [];
@@ -62,4 +62,4 @@ for (let currentTeam of soccerTeams) {
   fouls = currentTeam.fouls;
   newSoccerTeams.push({ name, fouls });
 }
-console.log(newSoccerTeams);
+console.table(newSoccerTeams);
