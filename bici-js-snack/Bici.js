@@ -33,10 +33,10 @@ const racingBike = [
 // );
 
 // * VERSIONE DYNAMIC
-let lightestBike;
+let lightestBike = racingBike[0];
 
 for (const currentBike of racingBike) {
-  if (!lightestBike || currentBike.weight < lightestBike.weight) {
+  if (currentBike.weight < lightestBike.weight) {
     lightestBike = currentBike;
   }
 }
